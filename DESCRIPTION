@@ -8,6 +8,10 @@ Author: c(person("Camila", "Garcia-Echeverri", email = "cagarciae@unal.edu.co", 
 Maintainer: Camila Garcia-Echeverri <cagarciae@unal.edu.co>
 Description: A tool to sensibility analising using SOBOL and AMA indices.
             It allows to identify the most sensitive parameter of a model.
+Depends: R (>= 3.4)
+Imports: 
+        stats,
+        e1071
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
