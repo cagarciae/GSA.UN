@@ -2,29 +2,31 @@
 % Please edit documentation in R/Bstat.R
 \name{Bstat}
 \alias{Bstat}
-\title{Basic statistical measures}
+\title{Basic statistical measures of a model results}
 \usage{
-Bstat(x, y)
+Bstat(out_set)
 }
 \arguments{
-\item{#ENTRY}{2  HASTA EL NUMERO DE ENTRADAS}
+\item{out_set}{matrix of dimensions n x t, where n is the number of
+runs and t is the number of tempory steps.}
 }
 \value{
-QUÉ DEVUELVE?
+a data frame of dimensions t x 6, here t is the number of temporary steps
+and each column corresponds to a statistical measure: mean, variance,
+skewness, kurtosis and excess kurtosis.
 }
 \description{
-This function XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+This function calculates the mean, variance, skewness, kurtosis and
+excess kurtosis of a model output, this output can be given for
+different temproal periods, for example, days, months or years.
 }
 \examples{
-
-
+data("out_set")
+data_Bstat <- Bstat(out_set)
 
 }
 \author{
 Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
-Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
-Leonardo David Donado <lddonadog@unal.edu.co> \cr
-
 
 Hydrodynamics of the natural media research group - HYDS
 Universidad Nacional de Colombia - sede Bogota

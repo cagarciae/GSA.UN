@@ -1,41 +1,59 @@
-#' @name 
+#' @name
 #' Bstat
-#' 
-#' @title
-#' Basic statistical measures
-#' 
-#' @description 
-#' This function XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-#' 
-#' 
-#' 
-#' 
-#' @param #ENTRY 1 
-#' 
-#' 
-#' @param #ENTRY 2  HASTA EL NUMERO DE ENTRADAS
-#' 
-#' 
 #'
-#' @return 
-#' QUÉ DEVUELVE?
-#' 
+#' @title
+#' Basic statistical measures of a model results
+#'
+#' @description
+#' This function calculates the mean, variance, skewness, kurtosis and
+#' excess kurtosis of a model output, this output can be given for
+#' different temproal periods, for example, days, months or years.
+#'
+#'
+#' @param out_set matrix of dimensions n x t, where n is the number of
+#' runs and t is the number of tempory steps.
+#'
+#'
+#' @return
+#' a data frame of dimensions t x 6, here t is the number of temporary steps
+#' and each column corresponds to a statistical measure: mean, variance,
+#' skewness, kurtosis and excess kurtosis.
+#'
 #' @export
-#' 
-#' @author 
+#'
+#' @author
 #' Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
-#' Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
-#' Leonardo David Donado <lddonadog@unal.edu.co> \cr
-#' 
-#' 
+#'
 #' Hydrodynamics of the natural media research group - HYDS
 #' Universidad Nacional de Colombia - sede Bogota
-#' 
+#'
 #' @examples
-#' 
-#' 
-#' 
+#' data("out_set")
+#' data_Bstat <- Bstat(out_set)
+#'
 
-Bstat <- function(x,y){
-  x <- 1+1
+Bstat <- function(out_set){
+  sufix <- c(Mean="mean",Variance="var",Skewness="skw",Kurtosis="kurt", Kurtosis_ex="kurt_ex")
+
+  for(i in 1:5){
+    a<-paste(sufix[i],"_t",sep="")
+    aa<-vector("numeric",0)
+    assign(a,aa)
+  }
+
+  t <- dim(out_set)[2]
+
+  for(f in 1:t){
+    mean_t[f]<-mean(out_set[,f])
+    var_t[f]<-stats::var(out_set[,f])
+    skw_t[f]<- e1071::skewness(out_set[,f])
+    kurt_t[f]<- mean((out_set[,f]-mean_t[f])^4)/mean((out_set[,f]-mean_t[f])^2)^2
+    kurt_ex_t[f]<- e1071::kurtosis(out_set[,f])
+  }
+
+  data_Bstat<- data.frame(t<-c(1:t), Media_t<-mean_t,
+                             Var_t<-var_t, Skw_t<-skw_t, Kurt_t<-kurt_t,
+                             Kurt_ex_t<-kurt_ex_t)
+
+  return(data_Bstat)
 }
