@@ -3,30 +3,21 @@
 \docType{data}
 \name{parameters_set}
 \alias{parameters_set}
-\title{@title  Example function results}
+\title{@title  Set of parameters randomly generated}
 \format{
 A \code{matrix}
 \describe{
-   \item{parameters_set}{a vector with alpha1 values for each GRU}
+   \item{parameters_set}{a matrix of dimensions n x 3, runs of the model x
+   number of parameters}
 }
 }
 \source{
-Synthetic generation
+Random generation
 }
 \usage{
 parameters_set
 }
 \description{
-@description Data generated with an example funtion
-}
-\examples{
-\dontrun{
-data(ExampleFUN)
-summary(ExampleFUN)
-}
-
-}
-\author{
-CGE
+@description  It contains the parameters a,b,c.
 }
 \keyword{datasets}

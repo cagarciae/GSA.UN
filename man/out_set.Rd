@@ -3,30 +3,22 @@
 \docType{data}
 \name{out_set}
 \alias{out_set}
-\title{@title  Example function results}
+\title{@title  Results of a sample model}
 \format{
 A \code{matrix}
 \describe{
-   \item{out_set}{a vector with alpha1 values for each GRU}
+   \item{out_set}{a matrix of dimensions n x t, runs of the model x
+   temporary steps}
 }
 }
 \source{
-Synthetic generation
+Random generation
 }
 \usage{
 out_set
 }
 \description{
-@description Data generated with an example funtion
-}
-\examples{
-\dontrun{
-data(ExampleFUN)
-summary(ExampleFUN)
-}
-
-}
-\author{
-CGE
+@description Output generated with an example funtion
+ x <- z*exp(a)+b*log(c)
 }
 \keyword{datasets}

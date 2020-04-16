@@ -1,131 +1,93 @@
-#'  @title  Example function results
+#'  @title  Results of a sample model
 #'
-#'  @description Data generated with an example funtion
+#'  @description Output generated with an example funtion
+#'  x <- z*exp(a)+b*log(c)
 #'
 #'
 #'@format A \code{matrix}
 #' \describe{
-#'    \item{out_set}{a vector with alpha1 values for each GRU}
+#'    \item{out_set}{a matrix of dimensions n x t, runs of the model x
+#'    temporary steps}
 #' }
 #'
-#' @source Synthetic generation
-#'
-#' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
+#' @source Random generation
 #'
 "out_set"
 
-#'  @title  Example function results
+#'  @title  Set of parameters randomly generated
 #'
-#'  @description Data generated with an example funtion
-#'
+#'  @description  It contains the parameters a,b,c.
 #'
 #'@format A \code{matrix}
 #' \describe{
-#'    \item{parameters_set}{a vector with alpha1 values for each GRU}
+#'    \item{parameters_set}{a matrix of dimensions n x 3, runs of the model x
+#'    number of parameters}
 #' }
 #'
-#' @source Synthetic generation
-#'
-#' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
+#' @source Random generation
 #'
 "parameters_set"
 
-#'  @title  Example function results
+#'  @title  Example input z
 #'
-#'  @description Data generated with an example funtion
+#'  @description Data generated randomly
 #'
 #'
 #'@format A \code{vector}
 #' \describe{
-#'    \item{z}{a vector with alpha1 values for each GRU}
+#'    \item{z}{a vector with values for z, generated randomly}
 #' }
 #'
-#' @source Synthetic generation
-#'
-#' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
+#' @source Random generation
 #'
 "z"
 
-#'  @title  Example function results
+#'  @title  Example parameter a
 #'
-#'  @description Data generated with an example funtion
+#'  @description Data generated randomly
 #'
 #'
 #'@format A \code{vector}
 #' \describe{
-#'    \item{a}{a vector with alpha1 values for each GRU}
+#'    \item{a}{a vector with values for a, generated randomly,
+#'    range from 1 to 10}
 #' }
 #'
-#' @source Synthetic generation
+#' @source Random generation
 #'
 #' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
 #'
 "a"
 
-#'  @title  Example function results
+#'  @title  Example parameter b
 #'
-#'  @description Data generated with an example funtion
+#'  @description Data generated randomly
 #'
 #'
 #'@format A \code{vector}
 #' \describe{
-#'    \item{b}{a vector with alpha1 values for each GRU}
+#'    \item{b}{a vector with values for b, generated randomly,
+#'    range from 200 to 300}
 #' }
 #'
-#' @source Synthetic generation
+#' @source Random generation
 #'
 #' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
-#'
 "b"
 
-#'  @title  Example function results
+#'  @title  Example parameter c
 #'
-#'  @description Data generated with an example funtion
+#'  @description Data generated randomly
 #'
 #'
 #'@format A \code{vector}
 #' \describe{
-#'    \item{c}{a vector with alpha1 values for each GRU}
+#'    \item{c}{a vector with values for c, generated randomly,
+#'    range from 0.1 to 0.2}
 #' }
 #'
-#' @source Synthetic generation
+#' @source Random generation
 #'
 #' @author CGE
-#'
-#' @examples
-#' \dontrun{
-#' data(ExampleFUN)
-#' summary(ExampleFUN)
-#' }
 #'
 "c"

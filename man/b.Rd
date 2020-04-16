@@ -3,28 +3,22 @@
 \docType{data}
 \name{b}
 \alias{b}
-\title{@title  Example function results}
+\title{@title  Example parameter b}
 \format{
 A \code{vector}
 \describe{
-   \item{b}{a vector with alpha1 values for each GRU}
+   \item{b}{a vector with values for b, generated randomly,
+   range from 200 to 300}
 }
 }
 \source{
-Synthetic generation
+Random generation
 }
 \usage{
 b
 }
 \description{
-@description Data generated with an example funtion
-}
-\examples{
-\dontrun{
-data(ExampleFUN)
-summary(ExampleFUN)
-}
-
+@description Data generated randomly
 }
 \author{
 CGE

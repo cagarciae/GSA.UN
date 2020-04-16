@@ -3,30 +3,20 @@
 \docType{data}
 \name{z}
 \alias{z}
-\title{@title  Example function results}
+\title{@title  Example input z}
 \format{
 A \code{vector}
 \describe{
-   \item{z}{a vector with alpha1 values for each GRU}
+   \item{z}{a vector with values for z, generated randomly}
 }
 }
 \source{
-Synthetic generation
+Random generation
 }
 \usage{
 z
 }
 \description{
-@description Data generated with an example funtion
-}
-\examples{
-\dontrun{
-data(ExampleFUN)
-summary(ExampleFUN)
-}
-
-}
-\author{
-CGE
+@description Data generated randomly
 }
 \keyword{datasets}
