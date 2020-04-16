@@ -91,3 +91,19 @@
 #' @author CGE
 #'
 "c"
+
+#'  @title  Example - parameters names
+#'
+#'  @description Parameters names
+#'
+#'
+#'@format A \code{vector}
+#' \describe{
+#'    \item{pp_names}{a vector of characters c("a","b","c")}
+#' }
+#'
+#' @source Random generation
+#'
+#' @author CGE
+#'
+"pp_names"
