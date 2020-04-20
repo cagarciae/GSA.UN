@@ -40,7 +40,7 @@
 #' CM <- Cond_Moments(parameters_set, out_set, pp_names)
 #'
 
-Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 10){
+Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 50){
 
   pp <- dim(parameters_set)[2]
   t <- dim(out_set)[2]
