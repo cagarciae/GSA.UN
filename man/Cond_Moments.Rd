@@ -4,7 +4,7 @@
 \alias{Cond_Moments}
 \title{Conditional statistical moments}
 \usage{
-Cond_Moments(parameters_set, out_set, pp_names, steps = 20)
+Cond_Moments(parameters_set, out_set, pp_names, steps = 100)
 }
 \arguments{
 \item{parameters_set}{matrix of dimensions n x pp, where n is the
@@ -27,7 +27,7 @@ ranges
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
-CM <- Cond_Moments(parameters_set, out_set, pp_names)
+CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=20)
 
 }
 \author{
