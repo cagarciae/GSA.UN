@@ -27,7 +27,7 @@ a list containing two matrices. The fisrt contains the first order sobol, the
 second sobol_total
 }
 \description{
-This function calculates the SOBOL firts order and total indices
+This function calculates the first order and total  SOBOL indices
 }
 \examples{
 data("data_Bstat", "CM", "pp_names")
