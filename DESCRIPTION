@@ -11,7 +11,8 @@ Description: A tool to sensibility analising using SOBOL and AMA indices.
 Depends: R (>= 3.4)
 Imports: 
         stats,
-        e1071
+        e1071,
+        utils
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
