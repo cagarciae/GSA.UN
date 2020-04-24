@@ -24,7 +24,6 @@
 #' @return
 #' A list of arrays, each array has dimensions of steps, t, p.
 #'
-#'
 #' @export
 #'
 #' @author
@@ -37,10 +36,10 @@
 #'
 #' @examples
 #' data("parameters_set", "out_set", "pp_names")
-#' CM <- Cond_Moments(parameters_set, out_set, pp_names)
+#' CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=20)
 #'
 
-Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 50){
+Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){
 
   pp <- dim(parameters_set)[2]
   t <- dim(out_set)[2]
