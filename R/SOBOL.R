@@ -5,7 +5,7 @@
 #' SOBOL indices
 #'
 #' @description
-#' This function calculates the SOBOL firts order and total indices
+#' This function calculates the first order and total  SOBOL indices
 #'
 #'
 #' @param data_var a vector containig the variance of the model output for each
@@ -66,7 +66,7 @@ SOBOL <- function(data_var, CM_mean, CM_var, pp_names){
     }
   }
 
-  SOBOL_indices <- list(sobol, sobol_total)
+  SOBOL_indices <- list("sobol"=sobol, "sobol_total"=sobol_total)
   return(SOBOL_indices)
 
 }
