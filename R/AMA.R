@@ -6,7 +6,7 @@
 #'
 #' @description
 #' This function calculates the AMA indices: AMAE, AMAV, AMAV
-#' y AMAK.
+#' and AMAK.
 #'
 #' @param data_Bstat a data frame of dimensions t x 6, here t is the number of
 #' temporary steps and each column corresponds to a statistical measure: mean,
@@ -33,6 +33,11 @@
 #'
 #' Hydrodynamics of the natural media research group - HYDS
 #' Universidad Nacional de Colombia - sede Bogota
+#'
+#' @references
+#' Dell’Oca, A., Riva, M., & Guadagnini, A. (2017). Moment-based metrics for global sensitivity
+#' analysis of hydrological systems. Hydrology and Earth System Sciences, 21(12), 6219–6234.
+#'  https://doi.org/10.5194/hess-21-6219-2017
 #'
 #' @examples
 #' data("data_Bstat", "CM", "pp_names")
