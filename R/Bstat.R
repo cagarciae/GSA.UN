@@ -33,6 +33,12 @@
 #'
 
 Bstat <- function(out_set){
+
+  if( !is.matrix(out_set)){
+    warning("out_set must be a matrix")
+  }else{
+
+
   sufix <- c(Mean="mean",Variance="var",Skewness="skw",Kurtosis="kurt", Kurtosis_ex="kurt_ex")
 
   for(i in 1:5){
@@ -43,6 +49,7 @@ Bstat <- function(out_set){
 
   t <- dim(out_set)[2]
 
+  #calculate the first four statistical moments
   for(f in 1:t){
     mean_t[f]<-mean(out_set[,f])
     var_t[f]<-stats::var(out_set[,f])
@@ -56,4 +63,5 @@ Bstat <- function(out_set){
                              Kurt_ex_t<-kurt_ex_t)
 
   return(data_Bstat)
+  }
 }
