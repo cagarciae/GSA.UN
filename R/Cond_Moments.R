@@ -58,16 +58,14 @@ Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){
     CM_skw<-array(dim=c(steps,t,pp),dimnames = list(NULL,NULL,pp_names))
     CM_kurt<-array(dim=c(steps,t,pp),dimnames = list(NULL,NULL,pp_names))
 
-
+    #generates the number of divisions to analyze the model output
     div <- dim(parameters_set)[1]/steps
     sorted <- apply(parameters_set,2,sort)
 
     ranges_pp <- matrix(nrow=3*steps,ncol=pp)
     colnames(ranges_pp) <- pp_names
 
-    # cond_pp <- matrix(nrow=steps,ncol=pp) revisar
-    # colnames(cond_pp) <- pp_names
-
+    #generates the parameter ranges for each division
     for (s in 1:pp){
       x <- 0
       a <- 1
@@ -90,8 +88,7 @@ Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){
 
     for(f in 1:t){
 
-      #calculo de momentos para cada intervalo
-
+      #calculates conditional moments for each range
       for (s in 1:pp){
 
         count__<-vector("numeric",0); mean__<-vector("numeric",0); var__<-vector("numeric",0);
