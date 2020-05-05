@@ -25,13 +25,18 @@ Each matrix has dimensions of t x pp.
 }
 \description{
 This function calculates the AMA indices: AMAE, AMAV, AMAV
-y AMAK.
+and AMAK.
 }
 \examples{
 data("data_Bstat", "CM", "pp_names")
 AMA_indices <- AMA(data_Bstat, CM, pp_names, steps= 20)
 
 
+}
+\references{
+Dell’Oca, A., Riva, M., & Guadagnini, A. (2017). Moment-based metrics for global sensitivity
+analysis of hydrological systems. Hydrology and Earth System Sciences, 21(12), 6219–6234.
+ https://doi.org/10.5194/hess-21-6219-2017
 }
 \author{
 Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr

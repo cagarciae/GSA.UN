@@ -34,6 +34,11 @@ data("data_Bstat", "CM", "pp_names")
 SOBOL_indices <- SOBOL(data_Bstat[,3], CM$CM_mean, CM$CM_var , pp_names)
 
 }
+\references{
+Sobol, I. M. (2001). Global sensitivity indices for nonlinear mathematical models
+and their Monte Carlo estimates. Mathematics and Computers in Simulation, 55(1–3),
+271–280. https://doi.org/10.1016/S0378-4754(00)00270-6
+}
 \author{
 Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
 Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
