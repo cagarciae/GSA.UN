@@ -1,9 +1,11 @@
 ---
 output: github_document
-bibliography: "`r here::here('README-references.bib')`"
+bibliography: "`r here::here('README_references.bib')`"
 header-includes:
   - \usepackage{color}
   - \usepackage{amsmath}
+editor_options: 
+  chunk_output_type: console
 ---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -13,7 +15,7 @@ header-includes:
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "README-",
+  fig.path = "man/figures/README-",
   out.width = "100%")
 ```
 
@@ -36,3 +38,5 @@ plot(pressure)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+## References 
