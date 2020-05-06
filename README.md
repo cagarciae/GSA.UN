@@ -8,7 +8,7 @@
 ## GSA.UN
 
 The R-package aims to implement global sensitivity analysis using two
-indices: Sobol (Sobol (2001)), AMA (Dell’Oca, Riva, and Guadagnini
+indices: SOBOL (Sobol (2001)), AMA (Dell’Oca, Riva, and Guadagnini
 (2017)).
 
 ## Installation
@@ -41,7 +41,7 @@ values. This technique seeks to explore the entire parametric range, to
 evaluate the effect of a factor while all the parameters are variable at
 the same time.
 
-## Sobol
+## SOBOL
 
 This is an index based on the variance that analyzes the global
 sensitivity, that is, the variance is considered as the only measure to
@@ -60,6 +60,21 @@ seeks to quantify the expected variation of each statistical moment 𝑴
 (𝒀) of the probability distributions of a given model due to the
 conditioning of parametric values, pdf f (p). Therefore, we have: mean 𝑬
 (𝒀), variance 𝑽 (𝒀), skewness 𝑹 (𝒀) and kurtosis 𝑲 (𝒀).
+
+## GSA.UN functions
+
+This package contains 6 functions each with its respective example.
+
+  - `AMA`:
+  - `Bstat`:
+  - `Cond_Moments`:
+  - `GSAtool`:
+  - `save_results`:
+  - `SOBOL`:
+
+## Dataset
+
+  - `Example_Data`:
 
 ## References
 
