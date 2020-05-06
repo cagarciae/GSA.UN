@@ -7,32 +7,105 @@
 
 ## GSA.UN
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+The R-package aims to implement global sensitivity analysis using two
+indices: Sobol (Sobol (2001)), AMA (Dell’Oca, Riva, and Guadagnini
+(2017)).
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+## Installation
+
+Currently, you can install the version under development from
+[Github](https://https://github.com/cagarciae/GSA.UN), using these
+commands:
 
 ``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
+install.packages("devtools")
+devtools::install_github("cagarciae/GSA.UN")
 ```
 
-## Including Plots
+## Global Sensitivity Analysis
 
-You can also embed plots, for example:
+Sensitivity Analysis is an important analytical technique when
+developing, improving and understanding models (Borgonovo et al. (2017),
+Hill et al. (2016)), it studies how the uncertainty of the obtained
+output can be attributed to the uncertainty of the model inputs, for
+example, input data, initial conditions or the parameters used. Here, it
+is necessary to highlight that the parameters in the models are in
+charge of characterizing the particularity of the processes and
+properties for each particular study; the number of parameters in a
+model can be from very small to very large, depending on the scale and
+type of model selected.
 
-<img src="man/figures/README-pressure-1.png" width="100%" />
+Global sensitivity analysis aims to analyze the relative influence of
+the input variables or parameters in the generation of the output
+values. This technique seeks to explore the entire parametric range, to
+evaluate the effect of a factor while all the parameters are variable at
+the same time.
 
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+## Sobol
+
+This is an index based on the variance that analyzes the global
+sensitivity, that is, the variance is considered as the only measure to
+quantify the contribution of each uncertain parameter to the general
+uncertainty. SOBOL uses the variance decomposition, based on the
+decomposition of the model’s output in summations of this statistical
+moment, using combinations of input parameters that are increased
+dimensionally (Sobol (1993)).
+
+## AMA
+
+This is an index based on multiple statistical moments that analyzes
+global sensitivity, that is, the first four statistical moments of 𝒀 are
+considered in the analysis (Dell’Oca, Riva, and Guadagnini (2017)). AMA
+seeks to quantify the expected variation of each statistical moment 𝑴
+(𝒀) of the probability distributions of a given model due to the
+conditioning of parametric values, pdf f (p). Therefore, we have: mean 𝑬
+(𝒀), variance 𝑽 (𝒀), skewness 𝑹 (𝒀) and kurtosis 𝑲 (𝒀).
 
 ## References
+
+<div id="refs" class="references">
+
+<div id="ref-Borgonovo2017">
+
+Borgonovo, E., X. Lu, E. Plischke, O. Rakovec, and M. C. Hill. 2017.
+“Making the most out of a hydrological model data set: Sensitivity
+analyses to open the model black-box.” *Water Resources Research* 53
+(9): 7933–50. <https://doi.org/10.1002/2017WR020767>.
+
+</div>
+
+<div id="ref-DellOca2017">
+
+Dell’Oca, Aronne, Monica Riva, and Alberto Guadagnini. 2017.
+“Moment-based metrics for global sensitivity analysis of hydrological
+systems.” *Hydrology and Earth System Sciences* 21 (12): 6219–34.
+<https://doi.org/10.5194/hess-21-6219-2017>.
+
+</div>
+
+<div id="ref-Hill2016">
+
+Hill, Mary C., Dmitri Kavetski, Martyn Clark, Ming Ye, Mazdak Arabi, Dan
+Lu, Laura Foglia, and Steffen Mehl. 2016. “Practical Use of
+Computationally Frugal Model Analysis Methods.” *Groundwater* 54 (2):
+159–70. <https://doi.org/10.1111/gwat.12330>.
+
+</div>
+
+<div id="ref-Sobol1993">
+
+Sobol, I. M. 1993. “Sensitivity analysis for nonlinear mathematical
+models.” In, 407–14. Mathematical Modelling; Computational Experiments.
+
+</div>
+
+<div id="ref-Sobol2001">
+
+———. 2001. “Global sensitivity indices for nonlinear mathematical models
+and their Monte Carlo estimates.” *Mathematics and Computers in
+Simulation* 55 (1-3): 271–80.
+<https://doi.org/10.1016/S0378-4754(00)00270-6>.
+
+</div>
+
+</div>
