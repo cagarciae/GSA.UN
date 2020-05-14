@@ -36,7 +36,7 @@
 #'
 #' @examples
 #' data("parameters_set", "out_set", "pp_names")
-#' CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=20)
+#' CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=15)
 #'
 
 Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){

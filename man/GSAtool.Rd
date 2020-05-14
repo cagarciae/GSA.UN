@@ -26,7 +26,7 @@ This function xxx
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
-GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 20)
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
 
 }
 \references{
