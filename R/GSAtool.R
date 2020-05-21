@@ -5,7 +5,7 @@
 #' Global Sensibility Analisys tool
 #'
 #' @description
-#' This function xxx
+#' This function performs the global sensitivity analysis starting from the gross results of the model.
 #'
 #'
 #' @param parameters_set matrix of dimensions n x pp, where n is the

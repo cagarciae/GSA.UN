@@ -22,7 +22,7 @@ a list containing two matrices. The fisrt contains the first order sobol, the
 second sobol_total
 }
 \description{
-This function xxx
+This function performs the global sensitivity analysis starting from the gross results of the model.
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
