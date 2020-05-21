@@ -81,11 +81,21 @@ This package contains 6 functions each with its respective example.
 
 ## Dataset
 
-  - `Example_Data`:
+  - `Example_Data`: Results obtained with the hydrological model used on
+    the middle magdalena valley, Colombia (Arenas-Bautista (2020))
 
 ## References
 
 <div id="refs" class="references">
+
+<div id="ref-Arenas-Bautista2020">
+
+Arenas-Bautista, María Cristina. 2020. “Integration of Hydrological and
+Economical Aspects for Water Management in Tropical Regions. Case Study:
+Middle Magdalena Valley, Colombia.” PhD thesis, Universidad Nacional de
+Colombia.
+
+</div>
 
 <div id="ref-Borgonovo2017">
 
