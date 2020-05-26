@@ -10,8 +10,8 @@
 #' different temproal periods, for example, days, months or years.
 #'
 #'
-#' @param out_set matrix of dimensions n x t, where n is the number of
-#' runs and t is the number of tempory steps.
+#' @param out_set matrix of dimensions n x t, where n equals the number of
+#' runs and t is equal to the number of temporary steps.
 #'
 #'
 #' @return

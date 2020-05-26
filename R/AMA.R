@@ -41,7 +41,7 @@
 #'
 #' @examples
 #' data("data_Bstat", "CM", "pp_names")
-#' AMA_indices <- AMA(data_Bstat, CM, pp_names, steps= 20)
+#' AMA_indices <- AMA(data_Bstat, CM, pp_names, steps= 15)
 #'
 #'
 
