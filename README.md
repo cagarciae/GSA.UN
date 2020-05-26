@@ -5,6 +5,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Build
+Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travis-ci.com/cagarciae/GSA.UN)
+
 ## GSA.UN
 
 The R-package aims to implement global sensitivity analysis using two
@@ -82,7 +85,7 @@ This package contains 6 functions each with its respective example.
 ## Dataset
 
   - `Example_Data`: Results obtained with the hydrological model used on
-    the middle magdalena valley, Colombia (Arenas-Bautista (2020))
+    the middle magdalena valley, Colombia (Arenas-Bautista (2020)).
 
 ## References
 

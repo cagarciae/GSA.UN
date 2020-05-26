@@ -10,6 +10,7 @@ editor_options:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Build Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travis-ci.com/cagarciae/GSA.UN)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
