@@ -71,7 +71,7 @@ This package contains 6 functions each with its respective example.
   - `AMA`: This function calculates AMA indices: AMAE, AMAV, AMAR and
     AMAK.
   - `Bstat`: This function calculates the mean, variance, skewness,
-    kurtosis and excess kurtosis of a model output
+    kurtosis and excess kurtosis of a model output.
   - `Cond_Moments`: This function evaluates the first four statistical
     moments after grouping the model output by differents parametric
     ranges.
