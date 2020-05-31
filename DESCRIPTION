@@ -1,7 +1,7 @@
 Package: GSA.UN
 Type: Package
 Title: Global Sensibility Analysis Tool
-Version: 0.1.0
+Version: 0.2.0
 Author: c(person("Camila", "Garcia-Echeverri", email = "cagarciae@unal.edu.co", comment = c(ORCID = "0000-0001-8227-7684"),role = c("aut")),
              person("Maria", "Arenas-Bautista", email = "mcarenasb@unal.edu.co", role = c("cot")),
              person("Leonardo", "Donado", email = "lddonadog@unal.edu.co", role = c("cot")))

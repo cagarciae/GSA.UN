@@ -7,8 +7,8 @@
 Bstat(out_set)
 }
 \arguments{
-\item{out_set}{matrix of dimensions n x t, where n is the number of
-runs and t is the number of tempory steps.}
+\item{out_set}{matrix of dimensions n x t, where n equals the number of
+runs and t is equal to the number of temporary steps.}
 }
 \value{
 a data frame of dimensions t x 6, here t is the number of temporary steps
