@@ -6,7 +6,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 [![Build
-Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travis-ci.com/cagarciae/GSA.UN)
+Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travis-ci.com/cagarciae/GSA.UN)[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3870871.svg)](https://doi.org/10.5281/zenodo.3870871)
 
 ## GSA.UN
 
