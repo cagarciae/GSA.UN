@@ -13,9 +13,9 @@ number of runs and pp is the number of parameters.}
 \item{out_set}{matrix of dimensions n x t, where n is the number of
 runs and t is the number of tempory steps.}
 
-\item{pp_names}{vector that contains the names of the parameters}
+\item{pp_names}{vector that contains the names of the parameters.}
 
-\item{steps}{number of divisions of the parametric range}
+\item{steps}{number of divisions of the parametric range.}
 }
 \value{
 A list of arrays, each array has dimensions of steps, t, pp.
@@ -23,12 +23,13 @@ A list of arrays, each array has dimensions of steps, t, pp.
 \description{
 This function evaluates the first four statistical moments
 after grouping the model output by differents parametric
-ranges
+ranges.
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
+\dontrun{
 CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=15)
-
+}
 }
 \author{
 Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
