@@ -15,9 +15,9 @@ variance, skewness, kurtosis and excess kurtosis.}
 moments calculated with the mean, variance, skewness, kurtosis. Each
 array has dimensions of steps, t, p.}
 
-\item{pp_names}{vector that contains the names of the parameters (pp).}
+\item{pp_names}{vector that contains the names of the parameters (pp)}
 
-\item{steps}{number of divisions of the parametric range.}
+\item{steps}{number of divisions of the parametric range}
 }
 \value{
 A list of four matrices, which corresponds to AMAE, AMAV, AMAR and AMAK indices.
