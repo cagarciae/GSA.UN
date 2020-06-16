@@ -74,7 +74,6 @@ Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){
         ranges_pp[(x-2),s] <- min(sorted[a:(div*i),s])
         ranges_pp[(x-1),s] <- max(sorted[a:(div*i),s])
         ranges_pp[(x),s] <- ranges_pp[(x-1),s]-ranges_pp[(x-2),s]
-        #cond_pp[i,s] <- ranges_pp[(x-1),s]-ranges_pp[(x-2),s] revisar
 
         a <- a+div
       }
