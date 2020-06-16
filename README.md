@@ -7,7 +7,7 @@
 
 [![Build
 Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travis-ci.com/cagarciae/GSA.UN)
-[![DOI](https://zenodo.org/badge/255471233.svg)](https://zenodo.org/badge/latestdoi/255471233)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3897406.svg)](https://doi.org/10.5281/zenodo.3897406)
 [![codecov](https://codecov.io/gh/cagarciae/GSA.UN/branch/master/graph/badge.svg)](https://codecov.io/gh/cagarciae/GSA.UN)
 
 ## GSA.UN
