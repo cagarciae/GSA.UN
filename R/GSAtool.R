@@ -18,6 +18,8 @@
 #'
 #' @param steps number of divisions of the parametric range
 #'
+#' @param save T to save the results in .csv files, by default save=F
+#'
 #' @return
 #' a list containing two matrices. The fisrt contains the first order sobol, the
 #' second sobol_total.
@@ -46,10 +48,12 @@
 #'
 #' @examples
 #' data("parameters_set", "out_set", "pp_names")
-#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
 #'
+#' \dontrun{
+#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
+#' }
 
-GSAtool <- function(parameters_set, out_set, pp_names, steps = 100){
+GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=F){
 
 
   data_Bstat <- Bstat(out_set)
@@ -60,6 +64,7 @@ GSAtool <- function(parameters_set, out_set, pp_names, steps = 100){
 
   AMA_indices <- AMA(data_Bstat , CM, pp_names, steps = steps)
 
-  save_results(SOBOL = SOBOL_indices[[1]], SOBOL_total = SOBOL_indices[[2]], amae = AMA_indices$AMAE, amav = AMA_indices$AMAV, amar = AMA_indices$AMAR, amak = AMA_indices$AMAK)
-
+  if (save==T){
+  (save_results(SOBOL = SOBOL_indices[[1]], SOBOL_total = SOBOL_indices[[2]], amae = AMA_indices$AMAE, amav = AMA_indices$AMAV, amar = AMA_indices$AMAR, amak = AMA_indices$AMAK))
+  }
 }
