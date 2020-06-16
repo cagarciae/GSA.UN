@@ -47,9 +47,4 @@ save_results <- function(SOBOL, SOBOL_total, amae, amav, amar, amak){
   a <- 'AMAK.csv'
   utils::write.csv(amak, file=a)
 
-
-  # all_indices=c("SOBOL","AMAE","AMAV", "AMAR",
-  #     "AMAK","Mean","Variance","Skewness","Kurtosis")
-  # merge_index<-matrix(nrow = pp, ncol=9, dimnames=list(pp_names,all_indices))
-
 }

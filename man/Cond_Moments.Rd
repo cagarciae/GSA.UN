@@ -2,7 +2,7 @@
 % Please edit documentation in R/Cond_Moments.R
 \name{Cond_Moments}
 \alias{Cond_Moments}
-\title{Conditional statistical moments}
+\title{Conditional statistical moments of a model output}
 \usage{
 Cond_Moments(parameters_set, out_set, pp_names, steps = 100)
 }
@@ -18,7 +18,7 @@ runs and t is the number of tempory steps.}
 \item{steps}{number of divisions of the parametric range}
 }
 \value{
-A list of arrays, each array has dimensions of steps, t, p.
+A list of arrays, each array has dimensions of steps, t, pp.
 }
 \description{
 This function evaluates the first four statistical moments

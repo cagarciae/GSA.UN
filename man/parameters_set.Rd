@@ -7,17 +7,19 @@
 \format{
 A \code{matrix}
 \describe{
-   \item{parameters_set}{a matrix of dimensions n x 3, runs of the model x
+   \item{parameters_set}{a matrix of dimensions 500 x 10 (n x pp),runs of the model x
    number of parameters}
 }
-}
-\source{
-Maria Crstina thesis XXX
 }
 \usage{
 parameters_set
 }
 \description{
-@description  It contains the parameters a,b,c.
+@description  It contains 10 parameters
+}
+\references{
+Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
+Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
+Universidad Nacional de Colombia.
 }
 \keyword{datasets}

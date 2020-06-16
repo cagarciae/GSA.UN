@@ -5,11 +5,11 @@
 #' SOBOL indices
 #'
 #' @description
-#' This function calculates the first order and total  SOBOL indices
+#' This function calculates the first order and total  SOBOL indices.
 #'
 #'
 #' @param data_var a vector containig the variance of the model output for each
-#' modelling time step
+#' modelling time step.
 #'
 #' @param CM_mean An array containfng the condicional mean of each parameter of
 #' the model. This array has dimensions of steps x t x pp, where steps is the
@@ -23,12 +23,12 @@
 #' and pp the number of parameters of the model.
 #'
 #'
-#' @param pp_names a strings vector with the names of the parameters of the model
+#' @param pp_names a strings vector with the names of the parameters of the model.
 #'
 #'
 #' @return
 #' a list containing two matrices. The fisrt contains the first order sobol, the
-#' second sobol_total
+#' second sobol_total.
 #'
 #'
 #' @export

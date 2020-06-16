@@ -20,7 +20,7 @@
 #'
 #' @return
 #' a list containing two matrices. The fisrt contains the first order sobol, the
-#' second sobol_total
+#' second sobol_total.
 #'
 #' @import stats e1071 utils
 #'

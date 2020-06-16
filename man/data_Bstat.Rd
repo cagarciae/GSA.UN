@@ -20,6 +20,6 @@ data_Bstat
 @description Data generated with the example of the function Cond_Moments
 }
 \author{
-CGE
+Camila Garcia-Echeverri
 }
 \keyword{datasets}

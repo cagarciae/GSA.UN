@@ -9,18 +9,18 @@ AMA(data_Bstat, CM, pp_names, steps = 100)
 \arguments{
 \item{data_Bstat}{a data frame of dimensions t x 6, here t is the number of
 temporary steps and each column corresponds to a statistical measure: mean,
-variance, #' skewness, kurtosis and excess kurtosis.}
+variance, skewness, kurtosis and excess kurtosis.}
 
 \item{CM}{A list of arrays, each array corresponds to the conditional
 moments calculated with the mean, variance, skewness, kurtosis. Each
 array has dimensions of steps, t, p.}
 
-\item{pp_names}{vector that contains the names of the parameters}
+\item{pp_names}{vector that contains the names of the parameters (pp)}
 
 \item{steps}{number of divisions of the parametric range}
 }
 \value{
-A list of four matrices, each matrix corresponds to AMAE, AMAV, AMAR and AMAK.
+A list of four matrices, which corresponds to AMAE, AMAV, AMAR and AMAK indices.
 Each matrix has dimensions of t x pp.
 }
 \description{

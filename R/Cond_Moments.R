@@ -2,7 +2,7 @@
 #' Cond_Moments
 #'
 #' @title
-#' Conditional statistical moments
+#' Conditional statistical moments of a model output
 #'
 #' @description
 #' This function evaluates the first four statistical moments
@@ -22,7 +22,7 @@
 #'
 #'
 #' @return
-#' A list of arrays, each array has dimensions of steps, t, p.
+#' A list of arrays, each array has dimensions of steps, t, pp.
 #'
 #' @export
 #'
@@ -81,9 +81,7 @@ Cond_Moments <- function(parameters_set, out_set , pp_names, steps = 100){
     }
 
     ranges_pp<-as.data.frame(ranges_pp)
-    #cond_pp<-as.data.frame(cond_pp) revisar
 
-    #a <- cond_pp[1,]-cond_pp[2,]; aa <- cond_pp[(steps),]-cond_pp[(steps-1),] #revisar
 
 
     for(f in 1:t){
