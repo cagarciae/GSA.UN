@@ -1,0 +1,83 @@
+---
+title: "Examples GSA.UN"
+author: "Camila Garcia-Echeverri"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Examples GSA.UN}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(GSA.UN)
+```
+
+
+## Bstat
+`Bstat` is the function responsible for calculating the basic statistical measures of a mathematical model results
+
+```{r echo=TRUE, results='hide'}
+library(GSA.UN)
+library(stats)
+library(e1071)
+
+data("Example_Data")
+
+data_Bstat <- Bstat(out_set)
+
+```
+
+## Cond_Moments
+
+```{r echo=TRUE, results='hide'}
+library(GSA.UN)
+library(stats)
+library(e1071)
+
+data("Example_Data")
+
+CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=15)
+```
+
+
+
+## SOBOL
+
+```{r echo=TRUE, results='hide'}
+library(GSA.UN)
+library(stats)
+
+data("Example_Data")
+
+SOBOL_indices <- SOBOL(data_Bstat[,3], CM$CM_mean, CM$CM_var , pp_names)
+```
+
+## AMA
+
+```{r echo=TRUE, results='hide'}
+library(GSA.UN)
+
+data("Example_Data")
+
+AMA_indices <- AMA(data_Bstat, CM, pp_names, steps= 15)
+```
+
+## GSAtool
+
+```{r echo=TRUE, results='hide'}
+library(GSA.UN)
+library(stats)
+library(e1071)
+
+data("Example_Data")
+
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
+```
+
+
+
