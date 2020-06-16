@@ -16,9 +16,9 @@
 #'
 #' @param pp_names a strings vector with the names of the parameters of the model
 #'
-#' @param steps number of divisions of the parametric range
+#' @param steps number of divisions of the parametric range.
 #'
-#' @param save T to save the results in .csv files, by default save=F
+#' @param save T to save the results in .csv files, by default save=F.
 #'
 #' @return
 #' a list containing two matrices. The fisrt contains the first order sobol, the
