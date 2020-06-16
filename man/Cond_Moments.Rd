@@ -27,8 +27,9 @@ ranges
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
+\dontrun{
 CM <- Cond_Moments(parameters_set, out_set, pp_names, steps=15)
-
+}
 }
 \author{
 Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr

@@ -2,11 +2,11 @@ Package: GSA.UN
 Type: Package
 Title: Global Sensibility Analysis Tool
 Version: 1.0.0
-Author: c(person("Camila", "Garcia-Echeverri", email = "cagarciae@unal.edu.co", comment = c(ORCID = "0000-0001-8227-7684"),role = c("aut")),
+Authors@R: c(person("Camila", "Garcia-Echeverri", email = "cagarciae@unal.edu.co", comment = c(ORCID = "0000-0001-8227-7684"),role = c("aut","cre")),
              person("Maria", "Arenas-Bautista", email = "mcarenasb@unal.edu.co", role = c("cot")),
              person("Leonardo", "Donado", email = "lddonadog@unal.edu.co", role = c("cot")))
 Maintainer: Camila Garcia-Echeverri <cagarciae@unal.edu.co>
-Description: A tool to sensitivity analising using SOBOL and AMA indices.
+Description: A tool to sensitivity analysis using SOBOL and AMA indices.
             It allows to identify the most sensitive parameter or parameters of a mathematical model.
 Depends: R (>= 3.4)
 Imports: 
