@@ -4,7 +4,7 @@
 \alias{GSAtool}
 \title{Global Sensibility Analisys tool}
 \usage{
-GSAtool(parameters_set, out_set, pp_names, steps = 100)
+GSAtool(parameters_set, out_set, pp_names, steps = 100, save = F)
 }
 \arguments{
 \item{parameters_set}{matrix of dimensions n x pp, where n is the
@@ -15,7 +15,9 @@ runs and t is the number of tempory steps.}
 
 \item{pp_names}{a strings vector with the names of the parameters of the model}
 
-\item{steps}{number of divisions of the parametric range}
+\item{steps}{number of divisions of the parametric range.}
+
+\item{save}{T to save the results in .csv files, by default save=F.}
 }
 \value{
 a list containing two matrices. The fisrt contains the first order sobol, the
@@ -26,8 +28,10 @@ This function performs the global sensitivity analysis starting from the gross r
 }
 \examples{
 data("parameters_set", "out_set", "pp_names")
-GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
 
+\dontrun{
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
+}
 }
 \references{
 Dell’Oca, A., Riva, M., & Guadagnini, A. (2017). Moment-based metrics for global sensitivity
