@@ -2,7 +2,7 @@
 % Please edit documentation in R/Bstat.R
 \name{Bstat}
 \alias{Bstat}
-\title{Basic statistical measures of a model results}
+\title{Basic statistical measures of a mathematical model results}
 \usage{
 Bstat(out_set)
 }
@@ -18,7 +18,7 @@ skewness, kurtosis and excess kurtosis.
 \description{
 This function calculates the mean, variance, skewness, kurtosis and
 excess kurtosis of a model output, this output can be given for
-different temproal periods, for example, days, months or years.
+different temporal periods (days, months or years).
 }
 \examples{
 data("out_set")

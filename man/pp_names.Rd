@@ -10,14 +10,16 @@ A \code{value}
    \item{pp_names}{a vector of characters}
 }
 }
-\source{
-Maria Crstina thesis XXX
-}
 \usage{
 pp_names
 }
 \description{
-@description Parameters names
+@description 10 parameters names.
+}
+\references{
+Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
+Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
+Universidad Nacional de Colombia.
 }
 \author{
 CGE

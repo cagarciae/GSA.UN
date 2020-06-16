@@ -10,18 +10,18 @@
 #'
 #' @param data_Bstat a data frame of dimensions t x 6, here t is the number of
 #' temporary steps and each column corresponds to a statistical measure: mean,
-#' variance, #' skewness, kurtosis and excess kurtosis.
+#' variance, skewness, kurtosis and excess kurtosis.
 #'
 #' @param CM A list of arrays, each array corresponds to the conditional
 #' moments calculated with the mean, variance, skewness, kurtosis. Each
 #' array has dimensions of steps, t, p.
 #'
-#' @param pp_names vector that contains the names of the parameters
+#' @param pp_names vector that contains the names of the parameters (pp).
 #'
-#' @param steps number of divisions of the parametric range
+#' @param steps number of divisions of the parametric range.
 #'
 #' @return
-#' A list of four matrices, each matrix corresponds to AMAE, AMAV, AMAR and AMAK.
+#' A list of four matrices, which corresponds to AMAE, AMAV, AMAR and AMAK indices.
 #' Each matrix has dimensions of t x pp.
 #'
 #' @export

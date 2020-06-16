@@ -19,7 +19,7 @@ runs and t is the number of tempory steps.}
 }
 \value{
 a list containing two matrices. The fisrt contains the first order sobol, the
-second sobol_total
+second sobol_total.
 }
 \description{
 This function performs the global sensitivity analysis starting from the gross results of the model.

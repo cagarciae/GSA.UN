@@ -2,12 +2,12 @@
 #' Bstat
 #'
 #' @title
-#' Basic statistical measures of a model results
+#' Basic statistical measures of a mathematical model results
 #'
 #' @description
 #' This function calculates the mean, variance, skewness, kurtosis and
 #' excess kurtosis of a model output, this output can be given for
-#' different temproal periods, for example, days, months or years.
+#' different temporal periods (days, months or years).
 #'
 #'
 #' @param out_set matrix of dimensions n x t, where n equals the number of
@@ -49,7 +49,7 @@ Bstat <- function(out_set){
 
   t <- dim(out_set)[2]
 
-  #calculate the first four statistical moments
+  #calculates the first four statistical moments
   for(f in 1:t){
     mean_t[f]<-mean(out_set[,f])
     var_t[f]<-stats::var(out_set[,f])

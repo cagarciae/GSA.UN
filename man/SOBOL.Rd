@@ -8,7 +8,7 @@ SOBOL(data_var, CM_mean, CM_var, pp_names)
 }
 \arguments{
 \item{data_var}{a vector containig the variance of the model output for each
-modelling time step}
+modelling time step.}
 
 \item{CM_mean}{An array containfng the condicional mean of each parameter of
 the model. This array has dimensions of steps x t x pp, where steps is the
@@ -20,14 +20,14 @@ the model. This array has dimensions of steps x t x pp, where steps is the
 number of divisions of the parametric range, t is the number of tempory steps
 and pp the number of parameters of the model.}
 
-\item{pp_names}{a strings vector with the names of the parameters of the model}
+\item{pp_names}{a strings vector with the names of the parameters of the model.}
 }
 \value{
 a list containing two matrices. The fisrt contains the first order sobol, the
-second sobol_total
+second sobol_total.
 }
 \description{
-This function calculates the first order and total  SOBOL indices
+This function calculates the first order and total  SOBOL indices.
 }
 \examples{
 data("data_Bstat", "CM", "pp_names")

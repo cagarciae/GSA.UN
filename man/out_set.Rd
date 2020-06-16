@@ -7,17 +7,19 @@
 \format{
 A \code{matrix}
 \describe{
-   \item{out_set}{a matrix of dimensions n x t, runs of the model x
-   temporary steps}
+   \item{out_set}{a matrix of dimensions 500 x 365 (pp x t), runs of the model x
+   temporary steps (365 days)}
 }
-}
-\source{
-Maria Crstina thesis XXX
 }
 \usage{
 out_set
 }
 \description{
-@description Output generated with an example funtion
+@description Output generated with an example mathematical model.
+}
+\references{
+Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
+Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
+Universidad Nacional de Colombia.
 }
 \keyword{datasets}
