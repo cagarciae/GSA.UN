@@ -312,7 +312,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <a class="sourceLine" id="cb1-2" title="2"><span class="kw">library</span>(stats)</a>
 <a class="sourceLine" id="cb1-3" title="3"><span class="kw">library</span>(e1071)</a>
 <a class="sourceLine" id="cb1-4" title="4"></a>
-<a class="sourceLine" id="cb1-5" title="5"><span class="kw">data</span>(<span class="st">&quot;Example_Data&quot;</span>)</a>
+<a class="sourceLine" id="cb1-5" title="5"><span class="kw">data</span>(<span class="st">&quot;out_set&quot;</span>)</a>
 <a class="sourceLine" id="cb1-6" title="6"></a>
 <a class="sourceLine" id="cb1-7" title="7">data_Bstat &lt;-<span class="st"> </span><span class="kw">Bstat</span>(out_set)</a></code></pre></div>
 </div>
@@ -322,7 +322,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <a class="sourceLine" id="cb2-2" title="2"><span class="kw">library</span>(stats)</a>
 <a class="sourceLine" id="cb2-3" title="3"><span class="kw">library</span>(e1071)</a>
 <a class="sourceLine" id="cb2-4" title="4"></a>
-<a class="sourceLine" id="cb2-5" title="5"><span class="kw">data</span>(<span class="st">&quot;Example_Data&quot;</span>)</a>
+<a class="sourceLine" id="cb2-5" title="5"><span class="kw">data</span>(<span class="st">&quot;parameters_set&quot;</span>, <span class="st">&quot;out_set&quot;</span>, <span class="st">&quot;pp_names&quot;</span>)</a>
 <a class="sourceLine" id="cb2-6" title="6"></a>
 <a class="sourceLine" id="cb2-7" title="7">CM &lt;-<span class="st"> </span><span class="kw">Cond_Moments</span>(parameters_set, out_set, pp_names, <span class="dt">steps=</span><span class="dv">15</span>)</a></code></pre></div>
 </div>
@@ -331,7 +331,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw">library</span>(GSA.UN)</a>
 <a class="sourceLine" id="cb3-2" title="2"><span class="kw">library</span>(stats)</a>
 <a class="sourceLine" id="cb3-3" title="3"></a>
-<a class="sourceLine" id="cb3-4" title="4"><span class="kw">data</span>(<span class="st">&quot;Example_Data&quot;</span>)</a>
+<a class="sourceLine" id="cb3-4" title="4"><span class="kw">data</span>(<span class="st">&quot;data_Bstat&quot;</span>, <span class="st">&quot;CM&quot;</span>, <span class="st">&quot;pp_names&quot;</span>)</a>
 <a class="sourceLine" id="cb3-5" title="5"></a>
 <a class="sourceLine" id="cb3-6" title="6">SOBOL_indices &lt;-<span class="st"> </span><span class="kw">SOBOL</span>(data_Bstat[,<span class="dv">3</span>], CM<span class="op">$</span>CM_mean, CM<span class="op">$</span>CM_var , pp_names)</a></code></pre></div>
 </div>
@@ -339,7 +339,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <h2>AMA</h2>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb4-1" title="1"><span class="kw">library</span>(GSA.UN)</a>
 <a class="sourceLine" id="cb4-2" title="2"></a>
-<a class="sourceLine" id="cb4-3" title="3"><span class="kw">data</span>(<span class="st">&quot;Example_Data&quot;</span>)</a>
+<a class="sourceLine" id="cb4-3" title="3"><span class="kw">data</span>(<span class="st">&quot;data_Bstat&quot;</span>, <span class="st">&quot;CM&quot;</span>, <span class="st">&quot;pp_names&quot;</span>)</a>
 <a class="sourceLine" id="cb4-4" title="4"></a>
 <a class="sourceLine" id="cb4-5" title="5">AMA_indices &lt;-<span class="st"> </span><span class="kw">AMA</span>(data_Bstat, CM, pp_names, <span class="dt">steps=</span> <span class="dv">15</span>)</a></code></pre></div>
 </div>
@@ -349,7 +349,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 <a class="sourceLine" id="cb5-2" title="2"><span class="kw">library</span>(stats)</a>
 <a class="sourceLine" id="cb5-3" title="3"><span class="kw">library</span>(e1071)</a>
 <a class="sourceLine" id="cb5-4" title="4"></a>
-<a class="sourceLine" id="cb5-5" title="5"><span class="kw">data</span>(<span class="st">&quot;Example_Data&quot;</span>)</a>
+<a class="sourceLine" id="cb5-5" title="5"><span class="kw">data</span>(<span class="st">&quot;parameters_set&quot;</span>, <span class="st">&quot;out_set&quot;</span>, <span class="st">&quot;pp_names&quot;</span>)</a>
 <a class="sourceLine" id="cb5-6" title="6"></a>
 <a class="sourceLine" id="cb5-7" title="7">GSA_results &lt;-<span class="st"> </span><span class="kw">GSAtool</span>(parameters_set, out_set, pp_names, <span class="dt">steps =</span> <span class="dv">15</span>)</a></code></pre></div>
 </div>
