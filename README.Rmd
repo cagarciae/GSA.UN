@@ -29,7 +29,7 @@ The R-package aims to implement global sensitivity analysis using two indices: S
 
 ## Installation
 
-Currently, you can install the version under development from [Github](https://https://github.com/cagarciae/GSA.UN), using these commands:
+Currently, you can install the version under development from [Github](https://github.com/cagarciae/GSA.UN), using these commands:
 
 ```{r eval=FALSE, include=TRUE}
 install.packages("devtools")

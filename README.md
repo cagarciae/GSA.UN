@@ -19,8 +19,7 @@ indices: SOBOL (Sobol (2001)), AMA (Dell’Oca, Riva, and Guadagnini
 ## Installation
 
 Currently, you can install the version under development from
-[Github](https://https://github.com/cagarciae/GSA.UN), using these
-commands:
+[Github](https://github.com/cagarciae/GSA.UN), using these commands:
 
 ``` r
 install.packages("devtools")
@@ -91,7 +90,7 @@ This package contains 6 functions each with its respective example.
 
 ## References
 
-<div id="refs" class="references">
+<div id="refs" class="references hanging-indent">
 
 <div id="ref-Arenas-Bautista2020">
 
