@@ -13,7 +13,7 @@ Status](https://travis-ci.com/cagarciae/GSA.UN.svg?branch=master)](https://travi
 ## GSA.UN
 
 The R-package aims to implement global sensitivity analysis using two
-indices: SOBOL (Sobol (2001)), AMA (Dell’Oca, Riva, and Guadagnini
+indices: SOBOL (Sobol (2001)) and AMA (Dell’Oca, Riva, and Guadagnini
 (2017)).
 
 ## Installation

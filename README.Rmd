@@ -25,7 +25,7 @@ knitr::opts_chunk$set(
 
 ## GSA.UN
 
-The R-package aims to implement global sensitivity analysis using two indices: SOBOL (@Sobol2001), AMA (@DellOca2017).
+The R-package aims to implement global sensitivity analysis using two indices: SOBOL (@Sobol2001) and AMA (@DellOca2017).
 
 ## Installation
 
