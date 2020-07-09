@@ -23,8 +23,7 @@
 #' @param dir a directory  to save the results
 #'
 #' @return
-#' a list containing two matrices. The fisrt contains the first order sobol, the
-#' second sobol_total.
+#' a list containing two outputs: SOBOL and AMA indices.
 #'
 #' @import stats e1071 utils
 #'
@@ -71,7 +70,7 @@ GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=FALSE, 
                   amar = AMA_indices$AMAR, amak = AMA_indices$AMAK, dir=dir))
   }
 
-  GSA <- list(CM, SOBOL_indices, AMA_indices)
+  GSA <- list(SOBOL_indices, AMA_indices)
 
   return(GSA)
 }
