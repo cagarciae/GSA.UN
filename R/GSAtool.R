@@ -70,4 +70,8 @@ GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=FALSE, 
     (save_results(SOBOL = SOBOL_indices[[1]], amae = AMA_indices$AMAE, amav = AMA_indices$AMAV,
                   amar = AMA_indices$AMAR, amak = AMA_indices$AMAK, dir=dir))
   }
+
+  GSA <- list(CM, SOBOL_indices, AMA_indices)
+
+  return(GSA)
 }

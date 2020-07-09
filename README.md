@@ -130,8 +130,9 @@ Computationally Frugal Model Analysis Methods.” *Groundwater* 54 (2):
 
 <div id="ref-Sobol1993">
 
-Sobol, I. M. 1993. “Sensitivity analysis for nonlinear mathematical
-models.” In, 407–14. Mathematical Modelling; Computational Experiments.
+Sobol, I. M. 1993. “Sensitivity estimates for nonlinear mathematical
+models.” In, 407–14 (in English). Mathematical Modelling; Computational
+Experiments.
 
 </div>
 

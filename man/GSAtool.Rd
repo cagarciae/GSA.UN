@@ -2,9 +2,16 @@
 % Please edit documentation in R/GSAtool.R
 \name{GSAtool}
 \alias{GSAtool}
-\title{Global Sensibility Analisys tool}
+\title{Global Sensitivity Analisys tool}
 \usage{
-GSAtool(parameters_set, out_set, pp_names, steps = 100, save = F, dir)
+GSAtool(
+  parameters_set,
+  out_set,
+  pp_names,
+  steps = 100,
+  save = FALSE,
+  dir = NULL
+)
 }
 \arguments{
 \item{parameters_set}{matrix of dimensions n x pp, where n is the
@@ -29,10 +36,10 @@ second sobol_total.
 This function performs the global sensitivity analysis starting from the gross results of the model.
 }
 \examples{
-
-\donttest{
 data("parameters_set", "out_set", "pp_names")
-GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=T,dir=tempdir())
+\donttest{
+
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=FALSE)
 }
 }
 \references{

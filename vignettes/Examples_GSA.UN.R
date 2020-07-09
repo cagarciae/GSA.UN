@@ -46,5 +46,5 @@ library(e1071)
 
 data("parameters_set", "out_set", "pp_names")
 
-GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=FALSE)
 
