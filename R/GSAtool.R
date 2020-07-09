@@ -12,7 +12,7 @@
 #' number of runs and pp is the number of parameters.
 #'
 #' @param out_set matrix of dimensions n x t, where n is the number of
-#' runs and t is the number of tempory steps.
+#' runs and t is the number of temporary steps.
 #'
 #' @param pp_names a strings vector with the names of the parameters of the model
 #'

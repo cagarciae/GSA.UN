@@ -10,7 +10,7 @@
 #'
 #' @references  Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
 #' Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
-#' Universidad Nacional de Colombia.
+#' National University of Colombia.
 #'
 #' @author CGE
 #'
@@ -29,7 +29,7 @@
 #'
 #' @references  Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
 #' Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
-#' Universidad Nacional de Colombia.
+#' National University of Colombia.
 #'
 "out_set"
 
@@ -45,7 +45,7 @@
 #'
 #' @references  Arenas-Bautista, M. C. (2020). Integration of Hydrological and Economical
 #' Aspects for Water Management in Tropical Regions. Case Study: Middle Magdalena Valley, Colombia.
-#' Universidad Nacional de Colombia.
+#' National University of Colombia.
 #'
 "parameters_set"
 

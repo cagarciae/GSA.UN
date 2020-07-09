@@ -74,7 +74,7 @@ This package contains 6 functions each with its respective example.
   - `Bstat`: This function calculates the mean, variance, skewness,
     kurtosis and excess kurtosis of a model output.
   - `Cond_Moments`: This function evaluates the first four statistical
-    moments after grouping the model output by differents parametric
+    moments after grouping the model output by different parametric
     ranges.
   - `GSAtool`: This function performs the global sensitivity analysis
     starting from the gross results of the model.
@@ -86,7 +86,7 @@ This package contains 6 functions each with its respective example.
 ## Dataset
 
   - `Example_Data`: Results obtained with the hydrological model used on
-    the middle magdalena valley, Colombia (Arenas-Bautista (2020)).
+    the Middle Magdalena Valley, Colombia (Arenas-Bautista (2020)).
 
 ## References
 

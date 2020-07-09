@@ -7,17 +7,17 @@
 SOBOL(data_var, CM_mean, CM_var, pp_names)
 }
 \arguments{
-\item{data_var}{a vector containig the variance of the model output for each
+\item{data_var}{a vector containing the variance of the model output for each
 modelling time step.}
 
 \item{CM_mean}{An array containing the conditional mean of each parameter of
 the model. This array has dimensions of steps x t x pp, where steps is the
-number of divisions of the parametric range, t is the number of tempory steps
+number of divisions of the parametric range, t is the number of temporary steps
 and pp the number of parameters of the model.}
 
-\item{CM_var}{An array containfng the conditional variance of each parameter of
+\item{CM_var}{An array containing the conditional variance of each parameter of
 the model. This array has dimensions of steps x t x pp, where steps is the
-number of divisions of the parametric range, t is the number of tempory steps
+number of divisions of the parametric range, t is the number of temporary steps
 and pp the number of parameters of the model.}
 
 \item{pp_names}{a strings vector with the names of the parameters of the model.}

@@ -8,18 +8,18 @@
 #' This function calculates the first order and total  SOBOL indices.
 #'
 #'
-#' @param data_var a vector containig the variance of the model output for each
+#' @param data_var a vector containing the variance of the model output for each
 #' modelling time step.
 #'
 #' @param CM_mean An array containing the conditional mean of each parameter of
 #' the model. This array has dimensions of steps x t x pp, where steps is the
-#' number of divisions of the parametric range, t is the number of tempory steps
+#' number of divisions of the parametric range, t is the number of temporary steps
 #' and pp the number of parameters of the model.
 #'
 #'
-#' @param CM_var An array containfng the conditional variance of each parameter of
+#' @param CM_var An array containing the conditional variance of each parameter of
 #' the model. This array has dimensions of steps x t x pp, where steps is the
-#' number of divisions of the parametric range, t is the number of tempory steps
+#' number of divisions of the parametric range, t is the number of temporary steps
 #' and pp the number of parameters of the model.
 #'
 #'

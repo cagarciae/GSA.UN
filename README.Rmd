@@ -51,7 +51,7 @@ This package contains 6 functions each with its respective example.
 
 * `AMA`: This function calculates AMA indices: AMAE, AMAV, AMAR and AMAK.
 * `Bstat`: This function calculates the mean, variance, skewness, kurtosis and excess kurtosis of a model output.
-* `Cond_Moments`: This function evaluates the first four statistical moments after grouping the model output by differents  parametric ranges.
+* `Cond_Moments`: This function evaluates the first four statistical moments after grouping the model output by different  parametric ranges.
 * `GSAtool`: This function performs the global sensitivity analysis starting from the gross results of the model.
 * `save_results`: This function helps to save the results in .csv format.
 * `SOBOL`: This function calculates the first order and total  SOBOL indices.
