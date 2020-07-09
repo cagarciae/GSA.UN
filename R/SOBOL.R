@@ -11,13 +11,13 @@
 #' @param data_var a vector containig the variance of the model output for each
 #' modelling time step.
 #'
-#' @param CM_mean An array containfng the condicional mean of each parameter of
+#' @param CM_mean An array containing the conditional mean of each parameter of
 #' the model. This array has dimensions of steps x t x pp, where steps is the
 #' number of divisions of the parametric range, t is the number of tempory steps
 #' and pp the number of parameters of the model.
 #'
 #'
-#' @param CM_var An array containfng the condicional variance of each parameter of
+#' @param CM_var An array containfng the conditional variance of each parameter of
 #' the model. This array has dimensions of steps x t x pp, where steps is the
 #' number of divisions of the parametric range, t is the number of tempory steps
 #' and pp the number of parameters of the model.
@@ -27,7 +27,7 @@
 #'
 #'
 #' @return
-#' a list containing two matrices. The fisrt contains the first order sobol, the
+#' a list containing two matrices. The first contains the first order sobol, the
 #' second sobol_total.
 #'
 #'
@@ -40,7 +40,7 @@
 #'
 #'
 #' Hydrodynamics of the natural media research group - HYDS
-#' Universidad Nacional de Colombia - sede Bogota
+#' National University of Colombia -  Bogota
 #'
 #' @references
 #' Sobol, I. M. (2001). Global sensitivity indices for nonlinear mathematical models

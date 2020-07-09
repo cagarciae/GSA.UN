@@ -32,7 +32,7 @@
 #'
 #'
 #' Hydrodynamics of the natural media research group - HYDS
-#' Universidad Nacional de Colombia - sede Bogota
+#' National University of Colombia -  Bogota
 #'
 #' @references
 #' Dell’Oca, A., Riva, M., & Guadagnini, A. (2017). Moment-based metrics for global sensitivity

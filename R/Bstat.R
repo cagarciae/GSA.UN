@@ -25,7 +25,7 @@
 #' Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
 #'
 #' Hydrodynamics of the natural media research group - HYDS
-#' Universidad Nacional de Colombia - sede Bogota
+#' National University of Colombia -  Bogota
 #'
 #' @examples
 #' data("out_set")

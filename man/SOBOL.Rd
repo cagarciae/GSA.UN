@@ -10,12 +10,12 @@ SOBOL(data_var, CM_mean, CM_var, pp_names)
 \item{data_var}{a vector containig the variance of the model output for each
 modelling time step.}
 
-\item{CM_mean}{An array containfng the condicional mean of each parameter of
+\item{CM_mean}{An array containing the conditional mean of each parameter of
 the model. This array has dimensions of steps x t x pp, where steps is the
 number of divisions of the parametric range, t is the number of tempory steps
 and pp the number of parameters of the model.}
 
-\item{CM_var}{An array containfng the condicional variance of each parameter of
+\item{CM_var}{An array containfng the conditional variance of each parameter of
 the model. This array has dimensions of steps x t x pp, where steps is the
 number of divisions of the parametric range, t is the number of tempory steps
 and pp the number of parameters of the model.}
@@ -23,7 +23,7 @@ and pp the number of parameters of the model.}
 \item{pp_names}{a strings vector with the names of the parameters of the model.}
 }
 \value{
-a list containing two matrices. The fisrt contains the first order sobol, the
+a list containing two matrices. The first contains the first order sobol, the
 second sobol_total.
 }
 \description{
@@ -45,5 +45,5 @@ Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
 
 
 Hydrodynamics of the natural media research group - HYDS
-Universidad Nacional de Colombia - sede Bogota
+National University of Colombia -  Bogota
 }

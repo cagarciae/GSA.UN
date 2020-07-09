@@ -2,7 +2,7 @@
 #' GSAtool
 #'
 #' @title
-#' Global Sensitivity Analisys tool
+#' Global Sensitivity Analysis tool
 #'
 #' @description
 #' This function performs the global sensitivity analysis starting from the gross results of the model.
@@ -36,7 +36,7 @@
 #'
 #'
 #' Hydrodynamics of the natural media research group - HYDS
-#' Universidad Nacional de Colombia - sede Bogota
+#' National University of Colombia -  Bogota
 #'
 #' @references
 #' Dell’Oca, A., Riva, M., & Guadagnini, A. (2017). Moment-based metrics for global sensitivity

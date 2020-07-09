@@ -11,7 +11,7 @@ Cond_Moments(parameters_set, out_set, pp_names, steps = 100)
 number of runs and pp is the number of parameters.}
 
 \item{out_set}{matrix of dimensions n x t, where n is the number of
-runs and t is the number of tempory steps.}
+runs and t is the number of temporary steps.}
 
 \item{pp_names}{vector that contains the names of the parameters.}
 
@@ -22,7 +22,7 @@ A list of arrays, each array has dimensions of steps, t, pp.
 }
 \description{
 This function evaluates the first four statistical moments
-after grouping the model output by differents parametric
+after grouping the model output by different parametric
 ranges.
 }
 \examples{
@@ -36,5 +36,5 @@ Camila Garcia-Echeverri <cagarciae@unal.edu.co> \cr
 Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
 
 Hydrodynamics of the natural media research group - HYDS
-Universidad Nacional de Colombia - sede Bogota
+National University of Colombia -  Bogota
 }

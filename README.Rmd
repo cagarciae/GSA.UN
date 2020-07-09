@@ -58,6 +58,6 @@ This package contains 6 functions each with its respective example.
 
 ## Dataset
 
-* `Example_Data`: Results obtained with the hydrological model used on the middle magdalena valley, Colombia (@Arenas-Bautista2020).
+* `Example_Data`: Results obtained with the hydrological model used on the Middle Magdalena Valley, Colombia (@Arenas-Bautista2020).
 
 ## References 

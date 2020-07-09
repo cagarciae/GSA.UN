@@ -2,7 +2,7 @@
 % Please edit documentation in R/GSAtool.R
 \name{GSAtool}
 \alias{GSAtool}
-\title{Global Sensitivity Analisys tool}
+\title{Global Sensitivity Analysis tool}
 \usage{
 GSAtool(
   parameters_set,
@@ -29,8 +29,7 @@ runs and t is the number of tempory steps.}
 \item{dir}{a directory  to save the results}
 }
 \value{
-a list containing two matrices. The fisrt contains the first order sobol, the
-second sobol_total.
+a list containing two outputs: SOBOL and AMA indices.
 }
 \description{
 This function performs the global sensitivity analysis starting from the gross results of the model.
@@ -57,5 +56,5 @@ Maria Cristina Areas-Bautista <mcarenasb@unal.edu.co> \cr
 
 
 Hydrodynamics of the natural media research group - HYDS
-Universidad Nacional de Colombia - sede Bogota
+National University of Colombia -  Bogota
 }

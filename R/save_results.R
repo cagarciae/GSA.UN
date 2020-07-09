@@ -26,7 +26,7 @@
 
 #'
 #' Hydrodynamics of the natural media research group - HYDS
-#' Universidad Nacional de Colombia - sede Bogota
+#' National University of Colombia -  Bogota
 #'
 
 save_results <- function(SOBOL=NULL, SOBOL_total=NULL, amae=NULL, amav=NULL, amar=NULL, amak=NULL, dir){
