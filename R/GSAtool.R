@@ -52,7 +52,7 @@
 #'
 #' \donttest{
 #' data("parameters_set", "out_set", "pp_names")
-#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=T,dir=tempdir())
+#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=F)
 #' }
 
 GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=F, dir){
