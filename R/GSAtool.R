@@ -2,7 +2,7 @@
 #' GSAtool
 #'
 #' @title
-#' Global Sensibility Analisys tool
+#' Global Sensitivity Analisys tool
 #'
 #' @description
 #' This function performs the global sensitivity analysis starting from the gross results of the model.
@@ -49,13 +49,13 @@
 #' 271–280. https://doi.org/10.1016/S0378-4754(00)00270-6
 #'
 #' @examples
-#'
-#' \donttest{
 #' data("parameters_set", "out_set", "pp_names")
-#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=F)
+#' \donttest{
+#'
+#' GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=FALSE)
 #' }
 
-GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=F, dir){
+GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=FALSE, dir=NULL){
 
 
   data_Bstat <- Bstat(out_set)
@@ -66,7 +66,7 @@ GSAtool <- function(parameters_set, out_set, pp_names, steps = 100, save=F, dir)
 
   AMA_indices <- AMA(data_Bstat , CM, pp_names, steps = steps)
 
-  if (save==T){
+  if (save==TRUE){
     (save_results(SOBOL = SOBOL_indices[[1]], amae = AMA_indices$AMAE, amav = AMA_indices$AMAV,
                   amar = AMA_indices$AMAR, amak = AMA_indices$AMAK, dir=dir))
   }
