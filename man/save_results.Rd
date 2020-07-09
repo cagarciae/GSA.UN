@@ -4,7 +4,15 @@
 \alias{save_results}
 \title{Save GSA results}
 \usage{
-save_results(SOBOL, SOBOL_total, amae, amav, amar, amak)
+save_results(
+  SOBOL = NULL,
+  SOBOL_total = NULL,
+  amae = NULL,
+  amav = NULL,
+  amar = NULL,
+  amak = NULL,
+  dir
+)
 }
 \arguments{
 \item{SOBOL}{SOBOL index}
@@ -18,6 +26,8 @@ save_results(SOBOL, SOBOL_total, amae, amav, amar, amak)
 \item{amar}{AMAR index}
 
 \item{amak}{AMAK index}
+
+\item{dir}{a directory  to save the results}
 }
 \description{
 This function helps to save the results in .csv format

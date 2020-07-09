@@ -4,7 +4,7 @@
 \alias{GSAtool}
 \title{Global Sensibility Analisys tool}
 \usage{
-GSAtool(parameters_set, out_set, pp_names, steps = 100, save = F)
+GSAtool(parameters_set, out_set, pp_names, steps = 100, save = F, dir)
 }
 \arguments{
 \item{parameters_set}{matrix of dimensions n x pp, where n is the
@@ -18,6 +18,8 @@ runs and t is the number of tempory steps.}
 \item{steps}{number of divisions of the parametric range.}
 
 \item{save}{T to save the results in .csv files, by default save=F.}
+
+\item{dir}{a directory  to save the results}
 }
 \value{
 a list containing two matrices. The fisrt contains the first order sobol, the
@@ -27,10 +29,10 @@ second sobol_total.
 This function performs the global sensitivity analysis starting from the gross results of the model.
 }
 \examples{
-data("parameters_set", "out_set", "pp_names")
 
-\dontrun{
-GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15)
+\donttest{
+data("parameters_set", "out_set", "pp_names")
+GSA_results <- GSAtool(parameters_set, out_set, pp_names, steps = 15, save=T,dir=tempdir())
 }
 }
 \references{
