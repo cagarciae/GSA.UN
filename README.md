@@ -146,3 +146,6 @@ Simulation* 55 (1-3): 271–80.
 </div>
 
 </div>
+
+## Acknowledgments
+ This work was supported by The National University of Colombia - Bogotá Campus
