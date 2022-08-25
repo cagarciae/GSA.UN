@@ -147,5 +147,13 @@ Simulation* 55 (1-3): 271–80.
 
 </div>
 
+## Authors
+ Camila Garcia Echeverri (cagarciae@unal.edu.co) *
+ Maria Cristina Arenas (mcarenasb@unal.edu.co) * 
+ Leonardo David Donado (lddonadog@unal.edu.co) *
+ * Universidad Nacional de Colombia - Sede Bogotá
+
+
 ## Acknowledgments
  This work was supported by Universidad Nacional de Colombia - Sede Bogotá
+ 
