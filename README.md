@@ -148,10 +148,10 @@ Simulation* 55 (1-3): 271–80.
 </div>
 
 ## Authors
- (Camila Garcia Echeverri<sup>*) (cagarciae@unal.edu.co)\
- (Maria Cristina Arenas<sup>*) (mcarenasb@unal.edu.co)\
- (Leonardo David Donado<sup>*) (lddonadog@unal.edu.co)\
- (<sup>*) Universidad Nacional de Colombia - Sede Bogotá 
+ Camila Garcia Echeverri<sup>*   (cagarciae@unal.edu.co)\
+ Maria Cristina Arenas<sup>*   (mcarenasb@unal.edu.co)\
+ Leonardo David Donado<sup>*   (lddonadog@unal.edu.co)\
+ <sup>*   Universidad Nacional de Colombia - Sede Bogotá 
 
 
 ## Acknowledgments
